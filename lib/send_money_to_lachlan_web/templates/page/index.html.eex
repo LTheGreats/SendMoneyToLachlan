@@ -1,2 +1,3 @@
 <img src="<%= static_path(@conn, "/images/Bag.png") %>" style="width: 100%;height: auto;"/>
 <p style="text-align: center;">Please send lumens to <strong>lachlan-wilger*stellarx.com</strong></p>
+<img src="<%= static_path(@conn, "/images/public_address_qr.png") %>" style="display: block;margin-left: auto;margin-right: auto;"/>

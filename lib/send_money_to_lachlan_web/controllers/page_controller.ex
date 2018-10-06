@@ -6,6 +6,9 @@ defmodule SendMoneyToLachlanWeb.PageController do
   end
 
   defp get_quote() do
-    File.read!("priv/Quotes.txt") |> String.split("\n") |> Enum.random()
+    File.read!("priv/Quotes.txt")
+    |> String.replace_suffix("\n", "")
+    |> String.split("\n")
+    |> Enum.random()
   end
 end
